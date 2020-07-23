@@ -29,11 +29,10 @@ def Send_Notification(to,subject,body):
     message.set_content(body)
     message['subject'] = subject
     message['to'] = to
-    user = "productpricechecker0918@gmail.com"
-    message['from'] = "Ya BOI"
+    user = "[ Senders Email Address]"
 
     
-    password = "umpdtwcwzuxkorpt"
+    password = "[Password Here]"
     
     server = smtplib.SMTP("smtp.gmail.com",587)
     server.starttls()
@@ -79,6 +78,4 @@ Metro PCS: [number]@mymetropcs.com
 Tracfone: [number]@mmst5.tracfone.com
 U.S. Cellular: [number]@email.uscc.net
 Virgin Mobile: [number]@vmobl.com
-
-
 '''
