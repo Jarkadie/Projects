@@ -14,7 +14,7 @@ class ProductInfo:
         self.getProductInfo(url)
 
     def getProductInfo(self,url):
-        driver = webdriver.Chrome("C:/Users/Jacob/chromedriver.exe")
+        driver = webdriver.Chrome("C:/Users/chromedriver.exe")
         driver.get(url)
 
         price_container =  driver.find_element_by_class_name("a-box-group")
@@ -40,12 +40,6 @@ class ProductInfo:
         pickle.dump(self.getInfo(),pickle_out)
         pickle_out.close()
 
-
-
-
-
-
-
 if __name__ == "__main__":
     print("Welcome to the Amazon Price Checking Automater Product Information Saver... \n")
     print("Here you enter the URL of the product you want to recieve updates for and save this information for the automater... \n")
@@ -63,6 +57,4 @@ if __name__ == "__main__":
         print("Product Information Saved. Thanks for Using the Amazon Price Checking Automater")
     else:
         print("Product Information Not Saved. Thanks for Using the Amazon Price Checking Automater")
-
-        #https://www.amazon.com/gp/product/1941220975/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1
         
