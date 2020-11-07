@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 def getProductInfo(url):
-    driver = webdriver.Chrome("C:/Users/Jacob/chromedriver.exe")
+    driver = webdriver.Chrome("/chromedriver.exe")
     driver.get(url)
 
     price_container =  driver.find_element_by_class_name("a-box-group")
